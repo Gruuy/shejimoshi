@@ -1,0 +1,22 @@
+package com.gruuy.shejimoshi.structure.Flyweight;
+
+/**
+ * @author: Gruuy
+ * @remark: 具体享元对象2
+ * @date: Create in 15:19 2019/10/14
+ */
+public class TargetObject2 implements TargetObject {
+    private String str;
+    private NoFlyObject noFlyObject;
+
+    public TargetObject2(String str,NoFlyObject noFlyObject) {
+        this.str = str;
+        this.noFlyObject=noFlyObject;
+    }
+
+    @Override
+    public void say(){
+        System.out.println("TargetObject2："+str );
+        noFlyObject.say();
+    }
+}
